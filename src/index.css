@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-neutral-950: var(--neutral-950);
+  --color-neutral-900: var(--neutral-900);
+  --color-neutral-850: var(--neutral-850);
+  --color-neutral-800: var(--neutral-800);
+  --color-neutral-750: var(--neutral-750);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-100: var(--neutral-100);
+  --color-white: var(--text-color-white);
+  --color-black: var(--text-color-black);
+}
+
+:root {
+  --neutral-950: #0a0a0a;
+  --neutral-900: #171717;
+  --neutral-850: #202020;
+  --neutral-800: #262626;
+  --neutral-750: #303030;
+  --neutral-700: #404040;
+  --neutral-600: #525252;
+  --neutral-500: #737373;
+  --neutral-400: #a3a3a3;
+  --neutral-300: #d4d4d4;
+  --neutral-200: #e5e5e5;
+  --neutral-100: #f5f5f5;
+  --text-color-white: #ffffff;
+  --text-color-black: #000000;
+}
+
+/* Light mode overrides */
+.light {
+  --neutral-950: #f5f6f8;
+  --neutral-900: #ffffff;
+  --neutral-850: #eef0f2;
+  --neutral-800: #e2e4e8;
+  --neutral-750: #d4d6da;
+  --neutral-700: #c8cbd0;
+  --neutral-600: #8a8f98;
+  --neutral-500: #626770;
+  --neutral-400: #3c4048;
+  --neutral-300: #252830;
+  --neutral-200: #1a1c22;
+  --neutral-100: #0f1115;
+  --text-color-white: #0f1115;
+  --text-color-black: #ffffff;
+}
+
+/* Silk transition for all theme elements */
+body, #erp-app-shell, main, header, aside, .bg-neutral-900, .bg-neutral-950, .border-neutral-850, .border-neutral-800, p, h1, h2, h3, h4, span, div {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+

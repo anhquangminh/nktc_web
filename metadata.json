@@ -1,0 +1,8 @@
+{
+  "name": "Remix: AI Construction ERP Core",
+  "description": "Nền tảng quản lý công trình thông minh, tối ưu hóa tiến độ, ngân sách, vật tư và nhân sự.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
